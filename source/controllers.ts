@@ -16,7 +16,7 @@ class ContactsController {
   processOptions(options: ContactsControllerOptions) {
     if (options.action === "get") {
       if (options.params.id){
-        return this.contacts.getOndeById(options.params.id);
+        return this.contacts.getOneById(options.params.id);
       } else{
         return this.contacts.getAll();
       }
