@@ -25,7 +25,7 @@ class ContactsCollection {
     jsonfile.writeFileSync(__dirname + "/contact.json", this.data);
   }
 
-  getOndeById(id: number){
+  getOneById(id: number){
     return this.data.find((contact) => contact.id == id);
   }
 }
